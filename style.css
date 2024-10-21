@@ -1,0 +1,54 @@
+/* nav{
+    width: 100%;
+    background: #000;
+    padding-block: 10px;
+} */
+
+.text-lg{
+    font-size: 1rem;
+}
+
+/* Container styles */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Adds spacing between columns */
+}
+
+/* Product styles */
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+
+/* Product image */
+.product img {
+    width: 100%; /* Full width */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures the image fits within the container */
+    margin-bottom: 10px;
+}
+
+/* Product name */
+.text-pretty {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Truncate text if it's too long */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
