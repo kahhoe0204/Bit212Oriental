@@ -1,12 +1,40 @@
-/* nav{
-    width: 100%;
-    background: #000;
-    padding-block: 10px;
-} */
-
-.text-lg{
-    font-size: 1rem;
+nav{
+    background: #00BF63;
+    font-size: 2rem;
 }
+
+.category{
+    width: 100%;
+    text-align: center;
+    padding-block: 10px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.button{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.add-button{
+    color: #fff;
+    border-radius: 999px;
+    background: #000;
+    border: 0px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    box-shadow: -1px 1px 5px 1px #b4b4b4;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.add-button:hover{
+    scale: 1.02;
+}
+
+
 
 /* Container styles */
 .grid {
@@ -24,6 +52,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #fff;
+    cursor: pointer;
 }
 
 
