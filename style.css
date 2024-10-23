@@ -9,6 +9,7 @@ nav{
     padding-block: 10px;
     font-size: 1.4rem;
     font-weight: 500;
+    margin-bottom:20px;
 }
 
 .button{
@@ -30,18 +31,82 @@ nav{
     font-weight: 500;
 }
 
+.update-button{
+    color: #fff;
+    border-radius: 999px;
+    background: #414040;
+    border: 0px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    box-shadow: -1px 1px 5px 1px #b4b4b4;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.delete-button{
+    color: #fff;
+    border-radius: 999px;
+    background: #ff0202;
+    border: 0px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    box-shadow: -1px 1px 5px 1px #b4b4b4;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+.delete-button:hover{
+    background: #a50101;
+}
+
+.update-button:hover{
+    background: #000;
+}
+
 .add-button:hover{
     scale: 1.02;
 }
 
-
+.content-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Container styles */
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-template-columns: repeat(1, 1fr); /* 4 columns */
     gap: 20px; /* Adds spacing between columns */
 }
+
+
+@media only screen and (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 4 columns */
+        gap: 20px; /* Adds spacing between columns */
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 4 columns */
+        gap: 20px; /* Adds spacing between columns */
+    }
+  }
+
+  @media only screen and (min-width: 1440px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+        gap: 20px; /* Adds spacing between columns */
+    }
+  }
 
 /* Product styles */
 .product {
@@ -55,11 +120,25 @@ nav{
     cursor: pointer;
 }
 
+.updateProduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    /* border: 1px solid #ddd; */
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.product:hover{
+    box-shadow: 0px 3px 9px 0px #a4a4a4;
+}
+
 
 /* Product image */
-.product img {
-    width: 100%; /* Full width */
-    height: auto;
+.product img, .updateProduct img {
+    width: 300px; /* Full width */
+    height: 200px;
     border-radius: 8px;
     object-fit: cover; /* Ensures the image fits within the container */
     margin-bottom: 10px;
@@ -80,4 +159,111 @@ nav{
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+}
+
+.addItemForm{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.flexInput label{
+    margin-right: 10px;
+    width: 120px;
+    font-weight: 500;
+}
+
+.flexInput input[type="text"] {
+    padding: 0px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    height: 35px;
+}
+
+
+.flexInput input[type="file"] {
+    padding: 0px;
+    box-sizing: border-box;
+    width: 185px;
+}
+
+/* Modal */
+.deleteModalDark{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #616161a1;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999999;
+}
+
+.deletemodal{
+    background: #ffffff;
+    border-radius: 20px;
+    min-width: 350px;
+}
+
+.modal-head{
+    padding: 10px;
+    padding-inline: 40px;
+    background: #580000;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 20px 20px 0 0px;
+}
+
+.modal-body{
+    padding-inline: 45px;
+    padding-block: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.buttonsModal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 40px;
+    padding-block: 10px;
+    padding-bottom: 20px;
+}
+
+#modalCancel{
+    color: #000000;
+    border-radius: 999px;
+    background: #ffffff;
+    border: 0px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    box-shadow: -1px 1px 5px 1px #b4b4b4;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+#modalDelete{
+    color: #fff;
+    border-radius: 999px;
+    background: #ff0202;
+    border: 0px;
+    padding-inline: 20px;
+    padding-block: 5px;
+    box-shadow: -1px 1px 5px 1px #b4b4b4;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
 }

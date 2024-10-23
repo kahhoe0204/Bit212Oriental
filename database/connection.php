@@ -9,9 +9,9 @@
 
 $host="localhost";
 $port=3306;
-$database="u804333930_rosshen";
-$username="u804333930_rosshen";
-$password="9>n0S]hWKG";
+$database="";
+$username="";
+$password="";
 
 // global $conn;
 
