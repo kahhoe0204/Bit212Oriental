@@ -1,6 +1,6 @@
 <?php
 require_once  '../database/connection.php';
-define('URL', 'https://' . $_SERVER['SERVER_NAME'] . '/');
+define('URL', (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on' ? 'https://' : 'http://') . $_SERVER['SERVER_NAME'] . '/');
 header('Content-Type: application/json');
 
 
